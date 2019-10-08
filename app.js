@@ -41,7 +41,7 @@ app.post("/", function(req, res){
     headers: {
        "Authorization": "jegathish fc8f40a38e0828ef40c9a40a25a0b392-us20"
      },
-    //body: jsonData
+    body: jsonData
   };
 
   request(options, function(error, response, body){
@@ -64,7 +64,7 @@ app.post("/failure",function(req, res) {
   res.redirect("/");
 });
 
- 
+
 app.listen(process.env.PORT || 3000, function(){
   console.log("Server is running on port 3000.");
 });
